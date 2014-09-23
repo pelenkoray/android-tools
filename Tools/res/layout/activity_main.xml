@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res/com.main.tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.main.tools.MainActivity" >
+
+        <com.customview.ColorOptionsView
+            android:id="@+id/JsonReader"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignLeft="@+id/XMLReader"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="17dp"
+            android:background="?android:selectableItemBackground"
+            android:onClick="onClicked"
+            custom:titleText="Json Reader"
+            custom:valueColor="@android:color/holo_orange_dark"
+            custom:valueURL="@drawable/ic_launcher" >
+        </com.customview.ColorOptionsView>
+
+        <com.customview.ColorOptionsView
+            android:id="@+id/QRCode"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignLeft="@+id/XMLReader"
+            android:layout_below="@+id/XMLReader"
+            android:background="?android:selectableItemBackground"
+            android:onClick="onClicked"
+            custom:titleText="QR Code"
+            custom:valueColor="@android:color/holo_purple"
+            custom:valueURL="@drawable/ic_launcher" >
+        </com.customview.ColorOptionsView>
+
+        <com.customview.ColorOptionsView
+            android:id="@+id/XMLReader"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_below="@+id/JsonReader"
+            android:layout_centerHorizontal="true"
+            android:background="?android:selectableItemBackground"
+            android:onClick="onClicked"
+            custom:titleText="XML Reader"
+            custom:valueColor="@android:color/holo_blue_bright"
+            custom:valueURL="@drawable/ic_launcher" >
+        </com.customview.ColorOptionsView>
+
+        <com.customview.ColorOptionsView
+            android:id="@+id/ImageDownloader"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_alignLeft="@+id/QRCode"
+            android:layout_below="@+id/QRCode"
+            android:background="?android:selectableItemBackground"
+            android:onClick="onClicked"
+            custom:titleText="Image Downloader"
+            custom:valueColor="@android:color/holo_red_light"
+            custom:valueURL="@drawable/ic_launcher" >
+        </com.customview.ColorOptionsView>
+
+</RelativeLayout>

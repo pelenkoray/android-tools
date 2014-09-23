@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tools</string>
+    <string name="action_settings">Settings</string>
+    <string name="xml_name">XML Parser</string>
+    <string name="jsonreader_name">Json Parser</string>
+    <string name="qrcode_name">QR Code Reader</string>
+    <string name="downloader_name">Image Downloaer</string>
+    <string name="location">Location:</string>
+    <string name="country">Country:</string>
+    <string name="temperature">Temperature:</string>
+    <string name="humidity">Humidity:</string>
+    <string name="pressure">Pressure:</string>
+    <string name="weather">Weather</string>
+
+</resources>

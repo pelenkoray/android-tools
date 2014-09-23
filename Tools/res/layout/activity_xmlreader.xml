@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.XMLReader" >
+
+    <LinearLayout
+        android:id="@+id/layout_temperature"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignLeft="@+id/layout_country"
+        android:layout_below="@+id/layout_country"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textTemperature"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/temperature"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/editTemp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ems="10"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_pressure"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignLeft="@+id/layout_temperature"
+        android:layout_below="@+id/layout_temperature"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textPressure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:inputType="text"
+            android:text="@string/pressure"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/editPressure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="4"
+            android:ems="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_location"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignLeft="@+id/layout_humidity"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="2"
+            android:text="@string/location" />
+
+        <EditText
+            android:id="@+id/editLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_weight="4"
+            android:ems="10"
+            android:inputType="text" />
+
+        <requestFocus />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_location"
+        android:onClick="open"
+        android:text="@string/weather" />
+
+    <LinearLayout
+        android:id="@+id/layout_humidity"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/layout_pressure"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textHumidity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:inputType="text"
+            android:text="@string/humidity"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/editHumidity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ems="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_country"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textCountry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:inputType="text"
+            android:text="@string/country"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/editCountry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ems="10" >
+        </EditText>
+    </LinearLayout>
+
+</RelativeLayout>
